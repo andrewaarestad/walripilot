@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: walripilot_production
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: walripilotmysql
+  password: bf9zmT6a
+  host: mysql.walripilot.com

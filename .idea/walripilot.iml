@@ -46,7 +46,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v3.1.3, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.1.3, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.4, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.7, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.1.7, RVM: ruby-1.9.3-p194 [geoserver2]) [gem]" level="application" />
