@@ -1,241 +1,568 @@
+
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+    <meta name="ROBOTS" content="NOARCHIVE">
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
 
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("/assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
     <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
+
+
+
+
+        var codesite_token = "AcTdLk_f8bE6Cp2AJ-woDMgEVOw:1364831616373";
+
+
+        var CS_env = {"relativeBaseUrl":"","projectHomeUrl":"/p/arducopter","assetVersionPath":"https://ssl.gstatic.com/codesite/ph/15170358673760952803","profileUrl":"/u/102391672408633615020/","loggedInUserEmail":"andrew@fightingwalrus.com","assetHostPath":"https://ssl.gstatic.com/codesite/ph","projectName":"arducopter","domainName":null,"token":"AcTdLk_f8bE6Cp2AJ-woDMgEVOw:1364831616373"};
+        var _gaq = _gaq || [];
+        _gaq.push(
+                ['siteTracker._setAccount', 'UA-18071-1'],
+                ['siteTracker._trackPageview']);
+
+        _gaq.push(
+                ['projectTracker._setAccount', 'UA-8450907-4'],
+                ['projectTracker._trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+
     </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
 
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
+    <title>
+        arducopter -
 
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
 
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
+        Arduino-based autopilot for mulitrotor craft, from quadcopters to traditional helis - Google Project Hosting
+    </title>
+    <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/15170358673760952803/css/core.css">
 
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
+    <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/15170358673760952803/css/ph_detail.css" >
 
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
 
-      <div id="footer">&nbsp;</div>
+
+
+    <!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/15170358673760952803/css/d_ie.css" >
+    <![endif]-->
+    <style type="text/css">
+        .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+        .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+        .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+
+
+
+        .activity-level-High {
+            background:no-repeat url(https://ssl.gstatic.com/codesite/ph/images/activity-level.png) 0 0;
+            width: 16px;
+            height: 16px;
+        }
+        .activity-level-Low {
+            background:no-repeat url(https://ssl.gstatic.com/codesite/ph/images/activity-level.png) 0 -16px;
+            width: 16px;
+            height: 16px;
+        }
+        .activity-level-Medium {
+            background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/activity-level.png) -16px 0;
+            width: 16px;
+            height: 16px;
+        }
+        .activity-level-None {
+            background:no-repeat url(https://ssl.gstatic.com/codesite/ph/images/activity-level.png) -16px -16px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .psicon-container {
+            min-width:24px;
+        }
+
+
+    </style>
+</head>
+<body class="t1">
+<script type="text/javascript">
+    window.___gcfg = {lang: 'en'};
+    (function()
+    {var po = document.createElement("script");
+        po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
+<div class="headbg">
+
+    <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="#" id="multilogin-dropdown" onclick="return false;"
+         ><u><b>andrew@fightingwalrus.com</b></u> <small>&#9660;</small></a>
+ 
+ 
+ | <a href="/u/102391672408633615020/" id="projects-dropdown" onclick="return false;"
+         ><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="/u/102391672408633615020/" onclick="_CS_click('/gb/ph/profile');"
+      title="Profile, Updates, and Settings"
+         ><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Farducopter%2F"
+      onclick="_CS_click('/gb/ph/signout');"
+         ><u>Sign out</u></a>
+ 
+ </span>
+
     </div>
-  </body>
+
+    <div class="gbh" style="left: 0pt;"></div>
+    <div class="gbh" style="right: 0pt;"></div>
+
+
+    <div style="height: 1px"></div>
+    <!--[if lte IE 7]>
+    <div style="text-align:center;">
+        Your version of Internet Explorer is not supported. Try a browser that
+        contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+        <a href="http://www.google.com/chrome">Google Chrome</a>, or
+        <a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+    </div>
+    <![endif]-->
+
+
+
+    <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+           itemscope itemtype="http://schema.org/CreativeWork">
+        <tr style="height: 58px;">
+
+
+
+            <td id="plogo">
+                <link itemprop="url" href="/p/arducopter">
+                <a href="/p/arducopter/">
+
+
+                    <img src="/p/arducopter/logo?cct=1364427514"
+                         alt="Logo" itemprop="image">
+
+                </a>
+            </td>
+
+            <td style="padding-left: 0.5em">
+
+                <div id="pname">
+                    <a href="/p/arducopter/"><span itemprop="name">arducopter</span></a>
+                </div>
+
+                <div id="psum">
+                    <a id="project_summary_link"
+                       href="/p/arducopter/"><span itemprop="description">Arduino-based autopilot for mulitrotor craft, from quadcopters to traditional helis</span></a>
+
+                </div>
+
+
+            </td>
+            <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+
+                <form action="/hosting/search">
+                    <input size="30" name="q" value="" type="text">
+
+                    <input type="submit" name="projectsearch" value="Search projects" >
+                </form>
+
+        </tr>
+    </table>
+
+</div>
+
+
+<div id="mt" class="gtb">
+    <a href="/p/arducopter/" class="tab active">Project&nbsp;Home</a>
+
+
+
+
+    <a href="/p/arducopter/downloads/list" class="tab ">Downloads</a>
+
+
+
+
+
+    <a href="/p/arducopter/wiki/ArduCopter?tm=6" class="tab ">Wiki</a>
+
+
+
+
+
+    <a href="/p/arducopter/issues/list"
+       class="tab ">Issues</a>
+
+
+
+
+
+    <a href="/p/arducopter/source/checkout"
+       class="tab ">Source</a>
+
+
+
+
+
+
+
+
+    <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+    <tr>
+
+
+
+
+
+
+
+        <td class="subt">
+            <div class="st1">
+                <div class="isf">
+ <span class="inst1">
+ <a href="/p/arducopter/">Summary</a>
+ </span>
+
+
+
+                    &nbsp;
+ <span class="inst3">
+ <a href="/p/arducopter/people/list">People</a>
+ </span>
+
+
+                </div>
+            </div>
+
+        </td>
+
+
+        <td align="right" valign="top" class="bevel-right"></td>
+    </tr>
+</table>
+
+
+<script type="text/javascript">
+    var cancelBubble = false;
+    function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+
+        >
+
+
+
+
+
+
+
+<table width="100%">
+<tr class="pscontent">
+<td class="pscolumnl">
+
+<div class="phead">Project Information</div>
+
+
+<div class="psicon" style="min-height:23px">
+    <g:plusone size="small" annotation="inline" width="200"></g:plusone>
+</div>
+
+
+<div class="psicon">
+    <div class="psicon-container goog-inline-block">
+        <img width="15" height="15" id="star_img"
+             title="Click to star project"
+             src="https://ssl.gstatic.com/codesite/ph/images/star_off.gif"
+             style="cursor:pointer; float:right"
+
+             onclick="_CS_toggleStar(this,
+ {'scope': 'projects',
+ 'user': '_CURRENT_USER',
+ 'item': 'arducopter'
+ },
+ true,
+ '',
+ '',
+ '',
+ 'star_count',
+ 'plural');"/>
+    </div>
+ <span>
+ Starred by <span id="star_count">773</span>&nbsp;user<span id="plural">s</span>
+ </span>
+</div>
+
+<ul class="pslist">
+
+
+
+
+    <li class="psmeta">
+        <a href="/p/arducopter/feeds">Project feeds</a>
+    </li>
+    <li class="psgap"/>
+
+
+
+    <li class="psmeta"><b>Code license</b></li>
+    <li class="psmeta">
+        <a href="http://www.gnu.org/licenses/lgpl.html" rel="nofollow">GNU Lesser GPL</a>
+
+    </li>
+    <li class="psgap"/>
+
+
+    <li class="psmeta"><b>Content license</b></li>
+    <li class="psmeta">
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow">Creative Commons 3.0 BY-SA</a>
+    </li>
+    <li class="psgap"/>
+
+
+
+
+
+    <li class="psmeta">
+ <span id="project_labels">
+ <b>Labels</b><br/>
+ 
+ <a class="label"
+    href="/hosting/search?q=label:Arduino">Arduino</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:UAV">UAV</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:drone">drone</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:quadrotor">quadrotor</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:quadcopter">quadcopter</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:aeroquad">aeroquad</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:hexarotor">hexarotor</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:octocopter">octocopter</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:multirotor">multirotor</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:quadrocopter">quadrocopter</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:multicopter">multicopter</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:hexacopter">hexacopter</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:modelaircraft">modelaircraft</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:hobbyflying">hobbyflying</a>,
+ 
+ <a class="label"
+    href="/hosting/search?q=label:DIY">DIY</a>
+ 
+ </span>
+    </li>
+    <li class="psgap"/>
+
+
+</ul>
+<div class="psicon">
+    <div class="psicon-container goog-inline-block">
+        <div style="float:right" class="SPRITE_people-y16 goog-inline-block vt"></div>
+    </div>
+    <span><b>Members</b></span>
+</div>
+<ul class="pslist">
+
+
+
+
+
+    <a class="userlink"
+       href="/u/105910977869522122580/">analogue...@gmail.com</a
+            >,
+
+
+
+    <a class="userlink"
+       href="/u/102460849128326531388/">cr...@3drobotics.com</a
+            >
+
+
+
+
+    <li class="psgap"/>
+
+
+</ul>
+
+
+<div class="phead pfeatured">Featured</div>
+
+<div class="psicon">
+    <div class="psicon-container goog-inline-block">
+        <div style="float:right" class="SPRITE_filedownload-g16 goog-inline-block vt"></div>
+    </div>
+    <span><b>Downloads</b></span>
+</div>
+<ul class="pslist">
+
+    <li class="psmeta nowrap">
+        <a title="Download" href="//arducopter.googlecode.com/files/ArduCopter-2.7.3.zip" onclick="_gaq.push(['siteTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.7.3.zip', 'Featured, Type-Source, ArduCopter, OpSys-Arduino']);_gaq.push(['projectTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.7.3.zip', 'Featured, Type-Source, ArduCopter, OpSys-Arduino']);">
+        </a>
+        <a href="downloads/detail?name=ArduCopter-2.7.3.zip"
+           title="ArduCopter 2.7.3">ArduCopter-2.7.3.zip</a>
+    </li>
+
+    <li class="psmeta nowrap">
+        <a title="Download" href="//arducopter.googlecode.com/files/ArduCopter-2.8.1.zip" onclick="_gaq.push(['siteTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.8.1.zip', 'Featured, ArduCopter, OpSys-Arduino, Type-Source']);_gaq.push(['projectTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.8.1.zip', 'Featured, ArduCopter, OpSys-Arduino, Type-Source']);">
+        </a>
+        <a href="downloads/detail?name=ArduCopter-2.8.1.zip"
+           title="ArduCopter 2.8.1">ArduCopter-2.8.1.zip</a>
+    </li>
+
+    <li class="psmeta nowrap">
+        <a title="Download" href="//arducopter.googlecode.com/files/ArduCopter-2.9.1.zip" onclick="_gaq.push(['siteTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.9.1.zip', 'ArduCopter, OpSys-Arduino, Type-Source, 2.9.1, Featured']);_gaq.push(['projectTracker._trackEvent', 'Download - Downloaded', '//arducopter.googlecode.com/files/ArduCopter-2.9.1.zip', 'ArduCopter, OpSys-Arduino, Type-Source, 2.9.1, Featured']);">
+        </a>
+        <a href="downloads/detail?name=ArduCopter-2.9.1.zip"
+           title="ArduCopter-2.9.1">ArduCopter-2.9.1.zip</a>
+    </li>
+
+    <li class="psmeta"><a href="downloads/list">Show all &raquo</a></li>
+    <li class="psgap"/>
+</ul>
+
+
+
+
+
+<div class="phead">Links</div>
+<ul class="pslist" style="white-space:nowrap">
+
+    <li class="psmeta"><b>Blogs</b></li>
+
+    <li class="psmeta">
+        <a href="http://diydrones.com" rel="nofollow">DIY Drones</a>
+    </li>
+
+    <li class="psgap"/>
+
+
+    <li class="psmeta"><b>External links</b></li>
+
+    <li class="psmeta">
+        <a href="http://diydrones.com/forum/categories/arducopter-2-x-multicopter/listForCategory" rel="nofollow">ArduCopter DIY Drones Forum</a>
+    </li>
+
+    <li class="psmeta">
+        <a href="http://store.diydrones.com/" rel="nofollow">DIY Drones Store - USA</a>
+    </li>
+
+    <li class="psmeta">
+        <a href="http://www.udrones.com" rel="nofollow">Udrones Store - Americas</a>
+    </li>
+
+    <li class="psmeta">
+        <a href="http://store.jdrones.com/" rel="nofollow">jDrones Store - ASIA</a>
+    </li>
+
+    <li class="psgap"/>
+
+
+</ul>
+
+</td>
+<td id="wikicontent" class="psdescription">
+    <p><img src="http://wiki.ardupilot-mega.googlecode.com/git/images/ardu_copter_logo.png" /> </p><h1><a name="ArduCopter_-__The_Full-Featured_Multicopter_UAV!"></a><strong>ArduCopter  -  The Full-Featured Multicopter UAV!</strong><a href="#ArduCopter_-__The_Full-Featured_Multicopter_UAV!" class="section_anchor"></a></h1><p><img src="http://arducopter.googlecode.com/svn/images/ACQuad_med.jpg" /> </p><p><g:plusone size="medium" source="google:projecthosting"></g:plusone> </p><p><strong> The <a href="http://www.diydrones.com" rel="nofollow">DIY Drones</a> development team is proud to bring you the ultimate open source quadcopter and helicopter UAV!</strong> </p><p><img src="http://wiki.ardupilot-mega.googlecode.com/git/images/firmware1.png" /> </p><p>ArduCopter&#x27;s autopilot is based on <a href="https://store.diydrones.com/APM_2_0_Kit_p/br-ardupilotmega-03.htm" rel="nofollow">APM 2</a>, the most sophisticated IMU-based open source autopilot on the market. It provides full UAV functionality, with scripted waypoints, Ground Station and more.  </p><p><strong>Advanced GCS</strong> </p><p><img src="http://ardupilot-mega.googlecode.com/svn/ArduPilotMegaImages/Missionplanner1.PNG" /> </p><p><strong>Waypoints!</strong> </p><p><img src="http://ardupilot-mega.googlecode.com/svn/ArduPilotMegaImages/missionplanner2.PNG" /> </p><p>See the <a href="http://code.google.com/p/arducopter/wiki/ArduCopter?tm=6" rel="nofollow">Wiki manual</a> linked above for full details and instructions. </p><p><strong>Sample video: GPS position and altitude hold</strong> </p><p>
+    <iframe width="425" height="344" frameborder="0"
+            src="http://www.youtube.com/embed/AD3KVra6RrA">
+    </iframe>
+    </p><p>See some other ArduCopter videos <a href="https://www.youtube.com/user/erarius?feature=mhee" rel="nofollow">here</a>! </p><ul><li>Order ArduCopter kits and parts <a href="http://store.diydrones.com/category_s/28.htm" rel="nofollow">here</a> or buy them ready-to-fly <a href="http://www.udrones.com/product_p/acrtf1.htm" rel="nofollow">here</a>. </li><li>The manual is <a href="http://code.google.com/p/arducopter/wiki/ArduCopter?tm=6" rel="nofollow">here</a> </li></ul><p>
+    <script src="//code-opensocial.googleusercontent.com/gadgets/js/rpc.js?c=1&amp;container=code"></script>
+    <script type="text/javascript">
+        function resizeIframeHandler(opt_height) {
+            var elem = document.getElementById(this.f);
+            if (!elem) return;
+            if (!opt_height) {
+                elem.style.height = undefined;
+            }
+            else {
+                opt_height = Math.max(10, opt_height);
+                elem.style.height = opt_height + 'px';
+            }
+        }
+        gadgets.rpc.register("resize_iframe", resizeIframeHandler);
+
+        gadgets.rpc.register('set_title', function(title) {
+            var elem = document.getElementById(this.f + '_title');
+            if (elem) {
+                elem.innerHTML = gadgets.util.escape(title);
+            }
+        });
+    </script>
+    <h2 id="gadget0_title" class="gadget-title"></h2><iframe src="//code-opensocial.googleusercontent.com/gadgets/ifr?url=http%3A%2F%2Farducopter.googlecode.com%2Fsvn%2Fimages%2Fswf%2FDIYD3D.xml&amp;up_file3d=Test_1.swf&amp;parent=%2F%2Fcode.google.com%2Fhosting&amp;container=code" id="gadget0" name="gadget0" frameborder="1" width="320" height="260"></iframe> </p><h2><a name="ArduCopter_Platform_Feature_List"></a><strong>ArduCopter Platform Feature List</strong><a href="#ArduCopter_Platform_Feature_List" class="section_anchor"></a></h2><ul><li><strong>6 Degree of Freedom</strong> IMU stabilized control </li><li><strong>Gyro stabilized flight mode</strong> enabling acrobatics (loops and barrel rolls) </li><li><strong>GPS</strong> for position hold, waypoints and return-to-launch </li><li><strong>Magnetometer</strong> for heading determination </li><li><strong>Barometer</strong> for altitude hold </li><li><strong>IR sensor</strong> integration for obstacle avoidance </li><li><strong>Sonar sensor</strong> for automated takeoff and landing capability </li><li>Automated <strong>waypoint navigation</strong> </li><li><strong>Motor control</strong> using low cost standard PWM Electronics Speed Controllers (ESC&#x27;s) </li><li>On board flight <strong>telemetery data storage</strong> </li><li>Mounted <strong>camera stabilization</strong> capability </li><li><strong>Wireless command</strong> &amp; telemetry for long distance communication </li><li>Capability to fly in &quot;+&quot;, &quot;x&quot;, <strong>quad, hexa and octo</strong> configurations </li><li><strong>Battery level</strong> detection </li><li>User configurable <strong>LED flight pattern</strong> </li><li>Capability to use <strong>any R/C receiver</strong> </li><li>ArduCopter Configuration and Ground <strong>Control Software</strong> </li><li><strong>Realtime graphs</strong> of flight data </li><li><strong>GUI for configuration</strong> of PID and other flight parameters </li><li>On Screen Display <strong>(OSD)</strong> integration </li><li><strong>Waypoint programming</strong> using Google Maps </li><li>Mixertable view to <strong>auto configure &quot;+&quot;, &quot;x&quot;</strong>, quad, hexa and octo configurations </li></ul>
+</td>
+</tr>
+</table>
+<script src="https://ssl.gstatic.com/codesite/ph/15170358673760952803/js/prettify/prettify_core_compiled.js"></script>
+<script type="text/javascript">
+    prettyPrint();
+</script>
+
+
+
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/15170358673760952803/js/ph_core.js"></script>
+
+
+
+
+</div>
+
+<div id="footer" dir="ltr">
+    <div class="text">
+        <a href="/projecthosting/terms.html">Terms</a> -
+        <a href="http://www.google.com/privacy.html">Privacy</a> -
+        <a href="/p/support/">Project Hosting Help</a>
+    </div>
+</div>
+<div class="hostedBy" style="margin-top: -20px;">
+    <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+</div>
+
+
+
+
+
+
+</body>
 </html>
+
